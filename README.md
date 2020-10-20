@@ -1,1 +1,1 @@
-#### Thank you for using ***`create-zion-template`***
+#### Y-Blockchain's Website
