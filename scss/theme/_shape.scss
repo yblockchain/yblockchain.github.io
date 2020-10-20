@@ -1,0 +1,18 @@
+// SHAPES
+.shape-triangle {
+  z-index: -1;
+  position: relative;
+  margin-top: -19rem;
+}
+
+.shape-arc-up {
+  margin-top: -10rem;
+  @include media-breakpoint-up(md) {
+    margin-top: -21rem;
+  }
+}
+
+.shape-arc-down {
+  position: relative;
+  top: -8px;
+}

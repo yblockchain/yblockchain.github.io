@@ -1,0 +1,12 @@
+// IMAGES
+
+.card-img-curve {
+  border-bottom-left-radius: 50% 3%;
+  border-bottom-right-radius: 50% 3%;
+}
+
+.img-skew {
+  border-radius: 0.625rem;
+  transform-origin: 0 100%;
+  transform: skew(-2deg, -2deg);
+}

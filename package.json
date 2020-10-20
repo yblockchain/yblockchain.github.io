@@ -1,0 +1,53 @@
+{
+  "author": "Themewagon Team",
+  "private": true,
+  "name": "create-zion-template",
+  "version": "1.0.0",
+  "description": "HTML, Dashboard & WebApp Template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp"
+  },
+  "license": "https://themes.getbootstrap.com/licenses",
+  "homepage": "http://themewagon.com/",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "is_js": "^0.9.0",
+    "popper.js": "^1.14.7",
+    "prismjs": "^1.15.0",
+    "stickyfilljs": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.48",
+    "autoprefixer": "^9.4.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "7.0.0-beta.3",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-replace": "^1.0.0",
+    "gulp-rtlcss": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "promise": "^8.0.1"
+  },
+  "browserslist": [
+    "last 5 version"
+  ]
+}

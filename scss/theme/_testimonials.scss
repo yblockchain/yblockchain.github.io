@@ -1,0 +1,38 @@
+//testimonial image
+
+.img-testimonial {
+  max-width: 100%;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+
+  @include media-breakpoint-up(sm) {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 0.625rem 60%;
+    border-bottom-right-radius: 6.875rem 70%;
+    border-bottom-left-radius: 0.3rem !important;
+    border-top-left-radius: 0.3rem !important;
+    object-fit: cover;
+  }
+}
+
+.carousel-icon {
+  width: auto;
+  .carousel-control-prev-icon {
+    margin-left: 0.625rem;
+    &:hover {
+      background-color: $carousel-control-bg-color;
+    }
+  }
+  .carousel-control-next-icon {
+    margin-right: 0.625rem;
+    &:hover {
+      background-color: $carousel-control-bg-color;
+    }
+  }
+  // Icons for within
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 40% 40%;
+  }
+}

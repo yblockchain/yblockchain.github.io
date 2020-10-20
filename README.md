@@ -1,2 +1,1 @@
-# yblockchain.github.io
-Creating Github Pages
+#### Thank you for using ***`create-zion-template`***

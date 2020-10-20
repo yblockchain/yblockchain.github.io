@@ -1,0 +1,22 @@
+.footer-title {
+  font-size: 0.75rem;
+  margin-bottom: map_get($spacers, 3);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.text-500 {
+  color: $gray-500 !important;
+  &:hover {
+    color: $gray-600 !important;
+  }
+}
+.footer-text {
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.footer-hr {
+  margin: 0 0;
+  opacity: 0.12;
+}
