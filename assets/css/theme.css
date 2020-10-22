@@ -4,6 +4,10 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@import url(fontawesome-all.min.css);
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -600,6 +604,7 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+
 
 .container,
 .container-fluid,
@@ -1418,6 +1423,11 @@ progress {
   .offset-md-4 {
     margin-left: 33.33333%;
   }
+
+  .offset-md-4-5 {
+    margin-left: 39%;
+  }
+
   .offset-md-5 {
     margin-left: 41.66667%;
   }
