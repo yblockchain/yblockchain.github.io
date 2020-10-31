@@ -30,7 +30,7 @@
     <!-- ===============================================-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
-
+    <script src="js/script.js"></script>
   </head>
 
 
@@ -226,16 +226,9 @@
                     </div>
                     
                     
-                    <button class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="submitted();">Sign Up</button>
+                    <button class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="validateSubmission();">Sign Up</button>
                   </form>
 
-<!--                   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>              
- -->                  <script type="text/javascript">
-                  function submitted() {
-                    alert("Thanks for submitting the form!");
-                    }
-                  </script>
-                 
 
                 </div>
               </div>
@@ -293,7 +286,7 @@
                         <div class="card-body text-center py-7 px-6 p-md-5 p-lg-4 p-xxl-8">
                             <h2><span class="text-primary">Jason Rodrigues</span></h2>
                             <p class="text-muted mb-0">Ecosystem Lead at cLabs</p><br>
-                          <p>A NIT Trichy Alumnus. Enjoys stationery shopping and believes in the power of decentralization.</p>        
+                          <p>Enjoys poker, stationery shopping and believes in the power of decentralization.</p>        
                           <li class="list-inline-item mr-2"><a class="text-decoration-none" href="https://www.linkedin.com/in/jasonrrodrigues/" target="_blank"><img class="list-social-icon" src="assets/img/gallery/linkedin.png" alt="" width="25" /></a></li>
                           <li class="list-inline-item mr-2"><a class="text-decoration-none" href="mailto:jason@yblockcha.in" target="_blank"><img class="list-social-icon" src="assets/img/gallery/mail.png" alt="" width="25" /></a></li>
                         </div>
@@ -543,7 +536,7 @@
                     </div>         
               
 
-                    <button class="btn btn-block btn-success text-white" type="submit" value="submit">Sign Up</button>
+                    <button class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="validateSubmission()">Sign Up</button>
                   </form>
 
                   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
