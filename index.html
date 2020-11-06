@@ -31,6 +31,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
     <script src="js/script.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
   </head>
 
 
@@ -237,19 +239,25 @@
             <div class="col-lg-auto col-md-5">
               <div class="card hover-top-shadow hover-top-shadow-lg border-0 card-form"><img class="card-img-top card-img-curve" src="assets/img/gallery/photo-2345.png" alt="" />
                 <div class="card-body p-4 pt-5">
-                  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/formResponse?" target="hidden_iframe">
+                  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;validateWaitlistSubmission();">
                     <div class="mb-4">
-                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Name"/>
+                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Name" required/>
                     </div>
                     <div class="mb-4">
-                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email"/>
+                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email" type="email"/>
                     </div>
                     
                     
-                    <input class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="validateWaitlistSubmission();"></input>
+                    <input class="btn btn-block btn-success text-white" type="submit" value="Submit"></input>
                   </form>
 
-
+                  <script type="text/javascript">var submitted=false;</script>
+                  <script type="text/javascript">
+                  $('#gform').on('submit', function(e) {
+                    $('#gform *').fadeOut(2000);
+                    $('#gform').prepend('Thanks you for signing up!');
+                    });
+                  </script>
                 </div>
               </div>
             </div>
@@ -517,7 +525,7 @@
           <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8 text-center"><span class="badge mb-4 font-weight-normal text-uppercase bg-light text-primary">Newsletter</span>
               <h2 class="display-6 text-white">Join our community</h2>
-              <p class="text-muted mb-4 mb-md-6"><b>Twice a month,</b> you will get <b class="text-success">crisp blockchain newsletters</b> from us. <br><b>Subscribe for free</b> to stay upto speed about the latest happenings and analysis from the blockchain space. No spam, gauranteed.</p>
+              <p class="text-muted mb-4 mb-md-6"><b>Twice a month,</b> you will get <b class="text-success">crisp blockchain newsletters</b> from us. <br><b>Subscribe for free</b> to stay upto speed about the latest happenings and analysis from the blockchain space. No spam, guaranteed.</p>
             </div> 
             
     <!-- Newsletter form -->
@@ -527,20 +535,26 @@
            <br><div class="col-lg-auto col-md-5">
               <div class="card hover-top-shadow hover-top-shadow-lg border-0 card-form">
                 <div class="card-body p-4 pt-5">
-                  <form name="gformnews" id="gformnews" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwUwATSrQoTN8s2wjiUpekKqJqu58-9df2_xrmkdfUI6emkQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">                
+                  <form name="gformnews" id="gformnews" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwUwATSrQoTN8s2wjiUpekKqJqu58-9df2_xrmkdfUI6emkQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;validateNewsletterSubmission();">                
                     <div class="mb-4">
-                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email"/>
+                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email" type="email" required/>
                     </div>         
               
 
-                    <button class="btn btn-block btn-dark text-white" type="submit" value="submit" onclick="validateNewsletterSubmission()">Subscribe</button>
+                    <button class="btn btn-block btn-dark text-white" type="submit" value="submit" >Subscribe</button>
                   </form>
 
                   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
               </div>
             </div>
-
+            <script type="text/javascript">var submitted=false;</script>
+            <script type="text/javascript">
+            $('#gformnews').on('submit', function(e) {
+              $('#gformnews *').fadeOut(2000);
+              $('#gformnews').prepend('Thanks for signing up!');
+              });
+            </script>
              <!-- <div class="offset-md-5 col-lg-6 text-center">      
              <a class="btn btn-lg btn-success hover-top-shadow text-white" href="submit" target="_blank">Submit</a>
             </div>  -->          
