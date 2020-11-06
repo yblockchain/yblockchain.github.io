@@ -125,30 +125,29 @@
         <!-- ============================================-->
         <!-- Registration Form Sign Up -->
 
-            <!--  https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/viewform?usp=pp_url&entry.197464288=Hello&entry.158611921=hello@example.com -->
+            <!--  https://docs.google.com/forms/d/e/1FAIpQLSfA9KKUPWUFKxO4Zks8_Z-rQhIq44pa7BobyndY7YcbV9X5cQ/viewform?usp=pp_url&entry.1156657578=MyName&entry.1535679292=1234567890&entry.1418426396=hey@example.com&entry.1840064111=MyOrg -->
 
 
             <div class="col-lg-auto col-md-5">
               <div class="card hover-top-shadow hover-top-shadow-lg border-0 card-form"><!-- <img class="card-img-top card-img-curve" src="assets/img/gallery/photo-2345.png" alt="" /> -->
                 <div class="bg-light card-body p-4 pt-5">
-                  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/formResponse?" target="hidden_iframe">
+                  <form name="caform" id="caform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfA9KKUPWUFKxO4Zks8_Z-rQhIq44pa7BobyndY7YcbV9X5cQ/formResponse?" target="hidden_iframe">
                     <div class="mb-4">
-                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Name"/>
+                      <input class="form-control" type="text" name="entry.1156657578" id="entry.1156657578" placeholder="Name" required />
                     </div>
                     <div class="mb-4">
-                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Whatsapp Number"/>
+                      <input class="form-control" type="text" name="entry.1535679292" id="entry.1535679292" placeholder="Whatsapp Number" required minlength="10" />
                     </div>
                     <div class="mb-4">
-                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email"/>
+                      <input class="form-control" type="email" name="entry.1418426396" id="entry.1418426396" placeholder="Email" required />
                     </div>
                     <div class="mb-4">
-                      <input class="form-control" type="text" name="entry.158611921" id="entry.158611921" placeholder="Institution"/>
+                      <input class="form-control" type="text" name="entry.1840064111" id="entry.1840064111" placeholder="Institution" required />
                     </div>
                     
                     
-                    <input class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="validateWaitlistSubmission();"></input>
+                    <input class="btn btn-block btn-success text-white" type="submit" value="submit" onclick="$('#caform').trigger('reset');"></input>
                   </form>
-
 
                 </div>
               </div>
@@ -179,6 +178,7 @@
     <script src="assets/lib/is/is.min.js"></script>
     <script src="assets/lib/stickyfilljs/stickyfill.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
