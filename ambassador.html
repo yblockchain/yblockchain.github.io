@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
     <script src="js/script.js"></script>
-
+    <script src="assets/js/jquery.min.js"></script>
   </head>
 
 <body>
@@ -161,7 +161,13 @@
       </section>
 
 
-
+      <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+      $('#caform').on('submit', function(e) {
+        $('#caform *').fadeOut(2000);
+        $('#caform').prepend('Your submission has been processed...');
+        });
+      </script>
 </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->
