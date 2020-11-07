@@ -172,7 +172,7 @@
           <!-- New Section -->          
           <div class="row align-items-center mt-md-8 mt-5">
             <div class="col-md-7 col-lg-6 pr-lg-4 pr-xl-7">
-              <h2>We aim to create <br /><span class="text-primary">
+              <h2 align="center">We aim to create <br /><span class="text-primary">
                    the next wave of blockchain developers and managers. </span></h2>
               <p class="text-muted mb-4"> With an increasing demand for skilled people in blockchain, we aim to upskill the enthsiasts with industry-standard education. </p>
               <div class="d-flex align-items-start"><img src="assets/img/gallery/folder_plus.png" alt="" width="30" height="30" />
@@ -189,11 +189,37 @@
               </div>
             </div>
             <div class="col-md-5 col-lg-6"><img class="img-fluid img-skew" src="assets/img/gallery/falcon.png" alt="" /></div>
-          </div>
+          </div><br>
 
           <div class="row align-items-center" id="register">
+            <div class="col-lg-auto col-md-5">
+              <div class="bg-light card hover-top-shadow hover-top-shadow-lg border-0 card-form">
+                <div class="card-body p-4 pt-5">
+                  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;validateWaitlistSubmission();">
+                    <div class="mb-4">
+                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Name" required/>
+                    </div>
+                    <div class="mb-4">
+                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email" type="email"/>
+                    </div>                    
+                      <input class="btn btn-block btn-success text-white" type="submit" value="Submit"></input>
+                  </form>
+
+                  <script type="text/javascript">var submitted=false;</script>
+                  <script type="text/javascript">
+                  $('#gform').on('submit', function(e) {
+                    $('#gform *').fadeOut(2000);
+                    $('#gform').prepend('Thanks you for signing up!');
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+
+
+
             <div class="col-md px-xl-7 p-xxl-8 order-md-1 mb-4 mb-md-0 pl-md-4">
-              <h2><b>Join the revolution!</b> <br /><span class="text-success mt-2 d-block">Sign up on our waitlist </span></h2>
+              <h2 align="center"><b><br>Join the revolution!</b> <br /><span class="text-success mt-2 d-block">Sign up on our waitlist.</span></h2><br>
               <p class="text-muted"> Our industry-standard modules and resource library will put you on a track to become a blockchain expert. <br><br> Sign up now to gain free early access to our courses and <b class="text-primary">lifetime access to our blockchain resources!</b></p><br>
               <div class="row">
                 <div class="col-md-auto pr-xl-6">
@@ -235,33 +261,6 @@
         <!-- Registration Form Sign Up -->
 
             <!--  https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/viewform?usp=pp_url&entry.197464288=Hello&entry.158611921=hello@example.com -->
-
-
-            <div class="col-lg-auto col-md-5">
-              <div class="card hover-top-shadow hover-top-shadow-lg border-0 card-form"><img class="card-img-top card-img-curve" src="assets/img/gallery/photo-2345.png" alt="" />
-                <div class="card-body p-4 pt-5">
-                  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeUB3y9FWXvkI7Ub8JU-m9Q3Yxfege71DQ8IJv7mzTdK-etqA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;validateWaitlistSubmission();">
-                    <div class="mb-4">
-                      <input class="form-control" type="text" name="entry.197464288" id="entry.197464288" placeholder="Name" required/>
-                    </div>
-                    <div class="mb-4">
-                      <input class="form-control" type="email" name="entry.158611921" id="entry.158611921" placeholder="Email" type="email"/>
-                    </div>
-                    
-                    
-                    <input class="btn btn-block btn-success text-white" type="submit" value="Submit"></input>
-                  </form>
-
-                  <script type="text/javascript">var submitted=false;</script>
-                  <script type="text/javascript">
-                  $('#gform').on('submit', function(e) {
-                    $('#gform *').fadeOut(2000);
-                    $('#gform').prepend('Thanks you for signing up!');
-                    });
-                  </script>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- end of .container-->
@@ -553,7 +552,7 @@
             <script type="text/javascript">
             $('#gformnews').on('submit', function(e) {
               $('#gformnews *').fadeOut(2000);
-              $('#gformnews').prepend('Thanks for signing up!');
+              $('#gformnews').prepend('Thanks for subscribing!');
               });
             </script>
              <!-- <div class="offset-md-5 col-lg-6 text-center">      
