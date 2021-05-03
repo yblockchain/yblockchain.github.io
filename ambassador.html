@@ -50,22 +50,37 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-3 pl-0">
         <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="/"> YBlockchain </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item text-muted"><a class="nav-link" aria-current="page" href="/">Home</a></li>
-              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Yblockchain</a>
+              <!-- <li class="nav-item dropdown text-muted"><a class="nav-link active" aria-current="page" href="/">Home</a></li> -->
+              <li class="nav-item dropdown"><a class="nav-link active" aria-current="page" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Home</a>
                 <ul class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdown">                  
-                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="/#register">Sign Up</a></li>
-                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="/#mentors">Our Mentors</a></li>
-                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="/#pricing">Pricing</a></li>
-                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="/#faq">FAQ </a></li>
-                  <li><a class="dropdown-item text-secondary p-3" href="/#community">Community</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#portfolio">Our Portfolio</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#mission">Our mission</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#mentors">Our Mentors</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#collab">Partner with us</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link active" href="#">Ambassador</a></li>
+
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Docs</a>
+                <div class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item py-3 d-flex align-items-center" href="/docs/events-kit/introduction/"><img src="assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Events Kit<span class="badge badge-secondary bg-light text-primary">new</span></span>
+                        <p class="text-secondary mb-0">A guide to remote blockchain events</p>
+                      </div></a>
+                      <a class="list-group-item py-3 d-flex align-items-center" href="/docs/brand-kit"><img src="assets/img/gallery/layer.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Brand Kit<span class="badge badge-secondary bg-light text-primary">new</span></span>
+                        <p class="text-secondary mb-0">Brand kit of Yblockchain</p>
+                      </div></a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="/ambassador">Ambassador</a></li>
               <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Certifications</a>
                 <div class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdowndoc">
                   <div class="list-group list-group-flush"><a class="list-group-item py-3 d-flex align-items-center" href="certifications.html#basic"><img src="assets/img/gallery/document.png" alt="" />
@@ -83,19 +98,20 @@
                     </a></div>
                 </div>
               </li>
-            </ul>
+
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="#register">Join Our Network</a>
           </div>
         </div>
       </nav>
 
-      <section class="bg-white py-2 py-md-6">
+      <section class="bg-white py-8 py-md-9">
 
         <div class="container">
           <!-- New Section -->         
 
           <div class="row align-items-center" id="register">
             <div class="col-md px-xl-7 p-l-4 order-md-1 mb-4 mb-md-0 pl-md-4">
-              <h2 align="center"><b>Join the revolution!</b> <br /><span class="text-success mt-2 d-block">Become our blockchain ambassador</span></h2><br>
+            <h2 align="center"><b>Join the revolution!</b> <br /><span class="text-success mt-2 d-block">Become our blockchain ambassador</span></h2><br>
               <p class="text-dark"> Here's your chance to be <b class="text-primary">an advocate of blockchain</b> in your organization and community.<br><br>Become our blockchain ambassador today by signing up in the form to <br class="md-none"><b class="text-primary">join our web3 ecosystem</b></p><br>
               <div class="row">
                 <div class="col-md-auto pr-xl-6">
