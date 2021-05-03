@@ -74,8 +74,8 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Yblockchain</a>
+              <!-- <li class="nav-item dropdown text-muted"><a class="nav-link active" aria-current="page" href="/">Home</a></li> -->
+              <li class="nav-item dropdown"><a class="nav-link active" aria-current="page" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Home</a>
                 <ul class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdown">                  
                   <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#register">Join Our Network</a></li>
                   <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#portfolio">Our Portfolio</a></li>
@@ -84,6 +84,22 @@
                   <li><a class="dropdown-item text-secondary p-3" href="#collab">Partner with us</a></li>
                 </ul>
               </li>
+
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Docs</a>
+                <div class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item py-3 d-flex align-items-center" href="/docs/events-kit/introduction/"><img src="assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Events Kit<span class="badge badge-secondary bg-light text-primary">new</span></span>
+                        <p class="text-secondary mb-0">A guide to remote blockchain events</p>
+                      </div></a>
+                      <a class="list-group-item py-3 d-flex align-items-center" href="/docs/brand-kit"><img src="assets/img/gallery/layer.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Brand Kit<span class="badge badge-secondary bg-light text-primary">new</span></span>
+                        <p class="text-secondary mb-0">Brand kit of Yblockchain</p>
+                      </div></a>
+                  </div>
+                </div>
+              </li>
+
               <li class="nav-item"><a class="nav-link" href="/ambassador">Ambassador</a></li>
               <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Certifications</a>
                 <div class="dropdown-menu navbar-dropdown-menu" aria-labelledby="navbarDropdowndoc">
@@ -102,6 +118,7 @@
                     </a></div>
                 </div>
               </li>
+
             </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="#register">Join Our Network</a>
           </div>
         </div>
